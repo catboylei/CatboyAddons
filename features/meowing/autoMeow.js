@@ -1,8 +1,7 @@
 import Settings from "../../config"
-import { meow, woof, regsexMeow, regsexWoof, removeFormatting, prefix, hasMeow } from "../../utils/meowUtils"
+import { meow, woof, removeFormatting, prefix, hasMeow } from "../../utils/meowUtils"
 
 let lastMeow = 0
-//const cooldown = Settings().autoMeowCooldown
 
 register("chat", (event) => {
 

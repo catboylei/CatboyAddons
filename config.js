@@ -327,8 +327,6 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         ]
     })
 
-
-
 const setting = new Settings("CatboyAddons", config, "data/scheme-meow.json")
     .setCommand("CatboyAddons", ["cba", "catboyaddons"])
 
