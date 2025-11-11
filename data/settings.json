@@ -1,0 +1,220 @@
+[
+    {
+        "category": "General",
+        "settings": [
+            {
+                "type": 6,
+                "name": "toggle",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "toggleWoof",
+                "value": false
+            },
+            {
+                "type": 2,
+                "name": "paws"
+            }
+        ]
+    },
+    {
+        "category": "Meowing",
+        "settings": [
+            {
+                "type": 6,
+                "name": "autoMeow",
+                "value": true
+            },
+            {
+                "type": 4,
+                "name": "autoMeowCooldown",
+                "value": "500"
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmeowmeow",
+                "options": [
+                    {
+                        "name": "autoMeowBack",
+                        "value": true
+                    },
+                    {
+                        "name": "gigaAutoMeow",
+                        "value": false
+                    },
+                    {
+                        "name": "autoMeowParty",
+                        "value": true
+                    },
+                    {
+                        "name": "autoMeowFriend",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "type": 6,
+                "name": "meowSounds",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "randomMeows",
+                "value": false
+            },
+            {
+                "type": 1,
+                "name": "randomMeowsTime",
+                "value": 42
+            },
+            {
+                "type": 1,
+                "name": "randomMeowsChance",
+                "value": 69
+            },
+            {
+                "type": 6,
+                "name": "meowFilter",
+                "value": false
+            },
+            {
+                "type": 4,
+                "name": "meowFilterCustom",
+                "value": ""
+            },
+            {
+                "type": 6,
+                "name": "meowSpeak",
+                "value": true
+            }
+        ]
+    },
+    {
+        "category": "Inventory",
+        "settings": [
+            {
+                "type": 6,
+                "name": "slotBinding",
+                "value": true
+            },
+            {
+                "type": 10,
+                "name": "slotBindingKeybind",
+                "value": 38
+            },
+            {
+                "type": 3,
+                "name": "slotBindingTheme",
+                "value": 0
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmeowmeowmeow",
+                "options": [
+                    {
+                        "name": "slotBindingThemeToggle",
+                        "value": true
+                    },
+                    {
+                        "name": "slotBindingSound",
+                        "value": true
+                    },
+                    {
+                        "name": "slotBindingDungeon",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "type": 2,
+                "name": "removeSlotBindings"
+            },
+            {
+                "type": 6,
+                "name": "slotLocking",
+                "value": true
+            },
+            {
+                "type": 8,
+                "name": "meowmeo",
+                "options": [
+                    {
+                        "name": "lockBoundSlots",
+                        "value": false
+                    },
+                    {
+                        "name": "noDrop",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "type": 6,
+                "name": "wardrobeHotkeys",
+                "value": true
+            },
+            {
+                "type": 8,
+                "name": "meowm",
+                "options": [
+                    {
+                        "name": "unequipWardrobe",
+                        "value": false
+                    },
+                    {
+                        "name": "pinglessWardrobe",
+                        "value": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Notifiers",
+        "settings": [
+            {
+                "type": 6,
+                "name": "toggleBloodRush",
+                "value": true
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmeow",
+                "options": [
+                    {
+                        "name": "witherKeySpawn",
+                        "value": true
+                    },
+                    {
+                        "name": "witherKeyPickup",
+                        "value": true
+                    },
+                    {
+                        "name": "witherDoorOpen",
+                        "value": true
+                    },
+                    {
+                        "name": "bloodOpen",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "type": 6,
+                "name": "toggleBossfightTitles",
+                "value": true
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmeow",
+                "options": [
+                    {
+                        "name": "ragAxeTitle",
+                        "value": false
+                    }
+                ]
+            }
+        ]
+    }
+]

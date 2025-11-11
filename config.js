@@ -1,0 +1,335 @@
+import Settings from "../Amaterasu/core/Settings"
+import DefaultConfig from "../Amaterasu/core/DefaultConfig"
+import { data, prefix } from "./utils/meowUtils"
+
+const config = new DefaultConfig("CatboyAddons", "data/settings.json")
+// General
+    .addSwitch({
+        category: "General",
+        configName: "toggle",
+        title: "&l&dToggle CatboyAddons",
+        description: "Decides whether all features of this mod are &denabled &f/ &7disabled",
+        registerListener(previousvalue, newvalue) {
+            ChatLib.chat(`${prefix} CatboyAddons is now ${newvalue ? "&dEnabled" : "&7Disabled"}`)
+        }
+    })
+    .addSwitch({
+        category: "General",
+        configName: "toggleWoof",
+        title: "Toggle woof mode",
+        description: "toggle if you're one of them stinky puppy folk",
+        registerListener(previousvalue, newvalue) {
+            ChatLib.chat(`${prefix} Woof mode is now ${newvalue ? "&dEnabled" : "&7Disabled"}`)
+        }
+    })    
+    .addButton({
+        category: "General",
+        configName: "paws",
+        title: ":3",
+        description: "",
+        onClick() {
+            const ChatComponentText = Java.type("net.minecraft.util.ChatComponentText")
+			Client.currentGui.close()
+			setTimeout(() => {ChatLib.chat("§c§lA player has been removed from your game.\n§r§bUse /report to continue helping out the server!")}, 2500);
+			setTimeout(() => {Client.getMinecraft().func_147114_u().func_147298_b().func_150718_a(new ChatComponentText(
+			 "§cYou are temporarily banned for §f359d 23h 59m 59s§c from this server!\n\n" + 
+			  `§7Reason: §rCheating through the use of unfair game advantages.\n` + 
+			  "§7Find out more: §b§nhttps://www.hypixel.net/appeal\n\n§7Ban ID: §r#"
+			 + "B9ACL0" + 
+			 "\n§7Sharing your Ban ID may affect the processing of your appeal!"))}, 4000);
+            }
+    })
+    // Meowing    
+    .addSwitch({
+        category: "Meowing",
+        configName: "autoMeow",
+        title: "Auto Meow",
+        description: "Automatically meows on certain events",
+        subcategory: "Auto Meow",
+    })
+    .addTextInput({
+        category: "Meowing",
+        configName: "autoMeowCooldown",
+        title: "Auto Meow Cooldown",
+        description: "in milliseconds, defaults to 500 \n(this is mainly there to avoid infinite meow chains)",
+        subcategory: "Auto Meow",
+        value: "500",
+        placeHolder: "value in ms"
+    })
+    .addMultiCheckbox({
+        category: "Meowing",
+        subcategory: "Auto Meow",
+        configName: "meowmeowmeowmeow",
+        title: "Auto Meow Options",
+        description: "toggleable events for Auto Meow",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "On Player Meow",
+                configName: "autoMeowBack",
+                value: false
+            },
+            {
+                title: "On Any Player Message",
+                configName: "gigaAutoMeow",
+                value: false,
+            },
+            {
+                title: "On Party Join",
+                configName: "autoMeowParty",
+                value: false
+            },
+            {
+                title: "On Friend Join",
+                configName: "autoMeowFriend",
+                value: false
+            }
+        ]
+    })
+    .addSwitch({
+        category: "Meowing",
+        configName: "meowSounds",
+        title: "Meow Sounds",
+        description: "Play meow whenever someone meows in chat",
+        subcategory: "Meow Sounds",
+    })
+    .addSwitch({
+        category: "Meowing",
+        configName: "randomMeows",
+        title: "Random Meows",
+        description: "Meows Randomly",
+        subcategory: "Random Meows",
+    })
+    .addSlider({
+        category: "Meowing",
+        configName: "randomMeowsTime",
+        title: "Random Meow Time",
+        description: "Time in seconds between every random meow attempt",
+        subcategory: "Random Meows",
+        options: [1, 60],
+        value: 42
+    })
+    .addSlider({
+        category: "Meowing",
+        configName: "randomMeowsChance",
+        title: "Random Meow Chance",
+        description: "Probability (percentage) that a meow will be sent every attempt",
+        subcategory: "Random Meows",
+        options: [1, 100],
+        value: 69
+    })
+    .addSwitch({
+        category: "Meowing",
+        configName: "meowFilter",
+        title: "Meow Filter",
+        description: "Replaces choosen words with meows",
+        subcategory: "Meow Filter",
+    })
+    .addTextInput({
+        category: "Meowing",
+        configName: "meowFilterCustom",
+        title: "Custom Filter Words",
+        description: "custom words for the meow filter",
+        subcategory: "Meow Filter",
+        value: "",
+        placeHolder: "add words here"
+    })
+    .addSwitch({
+        category: "Meowing",
+        configName: "meowSpeak",
+        title: "Meow Speak",
+        description: "Adds a meow after every message",
+        subcategory: "Meow Speak",
+    })
+    // inventory
+    .addSwitch({
+        category: "Inventory",
+        configName: "slotBinding",
+        title: "Slot Binding",
+        description: "Toggle Slot Binding :3c",
+        subcategory: "Slot Binding",
+    })
+    .addKeybind({
+        category: "Inventory",
+        configName: "slotBindingKeybind",
+        title: "Keybind",
+        description: "keybind for slot binding",
+        subcategory: "Slot Binding"
+        //defaultKey: Keyboard.KEY_L
+    })    
+    .addSelection({
+        category: "Inventory",
+        configName: "slotBindingTheme",
+        title: "Slot Binding Theme",
+        description: "Select which preset you want (requires /ct load)",
+        options: ["pink", "gay"],
+        subcategory: "Slot Binding",
+    })
+    .addMultiCheckbox({
+        category: "Inventory",
+        subcategory: "Slot Binding",
+        configName: "meowmeowmeowmeowmeow",
+        title: "Slot Binding Options",
+        description: "other slot binding options",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "Display/Theme",
+                configName: "slotBindingThemeToggle",
+                value: false
+            },
+            {
+                title: "Sounds",
+                configName: "slotBindingSound",
+                value: false,
+            },
+            {
+                title: "Only in dungeons",
+                configName: "slotBindingDungeon",
+                value: false
+            }
+        ]
+    })
+    .addButton({
+        category: "Inventory",
+        configName: "removeSlotBindings",
+        title: "Remove all bindings",
+        description: "remove all slot bindings",
+        onClick() {
+            let amount = 0
+            for (let key in data.slotBindings) {
+                delete data.slotBindings[key]
+                amount++
+            }
+            for (let key in data.slotBindingsHistory) {
+                delete data.slotBindingsHistory[key]
+            }
+            data.save()
+            if (amount === 0) {
+                ChatLib.chat(`${prefix}&d No bindings to remove.`)
+                return
+            }
+            ChatLib.chat(`${prefix} &dRemoved &r${amount} &dbindings.`)
+        },
+        subcategory: "Slot Binding",
+    })
+    .addSwitch({
+        category: "Inventory",
+        configName: "slotLocking",
+        title: "Slot Locking",
+        description: "enables slot locking\nnote: this is packet based to be safer, will look worse visually though\n(needs to be toggled for the below options)",
+        subcategory: "Slot Locking",
+    })
+    .addMultiCheckbox({
+        category: "Inventory",
+        subcategory: "Slot Locking",
+        configName: "meowmeo",
+        title: "Slot Locking Options",
+        description: "slot locking options",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "Disable Dropping Bound Slots",
+                configName: "lockBoundSlots",
+                value: false
+            },
+            {
+                title: "Disable Dropping All",
+                configName: "noDrop",
+                value: false
+            }
+        ]
+    })
+    .addSwitch({
+        category: "Inventory",
+        configName: "wardrobeHotkeys",
+        title: "Wardrobe Keybinds",
+        description: "toggles wardrobe keybinds",
+        subcategory: "Wardrobe Keybinds",
+    })
+    .addMultiCheckbox({
+        category: "Inventory",
+        subcategory: "Wardrobe Keybinds",
+        configName: "meowm",
+        title: "Wardrobe Keybinds Options",
+        description: "more wardrobe keybind options",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "Allow unequipping",
+                configName: "unequipWardrobe",
+                value: false
+            },
+            {
+                title: "Zero Ping Wardrobe (visually buggy)",
+                configName: "pinglessWardrobe",
+                value: false
+            }
+        ]
+    })
+    .addSwitch({
+        category: "Notifiers",
+        configName: "toggleBloodRush",
+        subcategory: "Blood Rush",
+        title: "Toggle Blood Rush Titles",
+        description: "toggle blood rush titles (meow)"
+    })
+    .addMultiCheckbox({
+        category: "Notifiers",
+        subcategory: "Blood Rush",
+        configName: "meowmeowmeow",
+        title: "Blood Rush Title Options",
+        description: "toggleable bloodrush titles",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "On Key Spawn",
+                configName: "witherKeySpawn",
+                value: false
+            },
+            {
+                title: "On Key Pickup",
+                configName: "witherKeyPickup",
+                value: false,
+            },
+            {
+                title: "On Door Open",
+                configName: "witherDoorOpen",
+                value: false
+            },
+            {
+                title: "On Blood start",
+                configName: "bloodOpen",
+                value: false
+            }
+        ]
+    })
+    .addSwitch({
+        category: "Notifiers",
+        configName: "toggleBossfightTitles",
+        title: "Toggle Boss Titles",
+        description: "toggle boss titles",
+        subcategory: "Boss"
+    })
+    .addMultiCheckbox({
+        category: "Notifiers",
+        subcategory: "Blood Rush",
+        configName: "meowmeowmeow",
+        title: "Blood Rush Title Options",
+        description: "Boss Title options",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "P5 Rag Axe",
+                configName: "ragAxeTitle",
+                value: false
+            }
+        ]
+    })
+
+
+
+const setting = new Settings("CatboyAddons", config, "data/scheme-meow.json")
+    .setCommand("CatboyAddons", ["cba", "catboyaddons"])
+
+export default () => setting.settings;
