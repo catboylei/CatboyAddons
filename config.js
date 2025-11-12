@@ -323,6 +323,11 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
                 title: "P5 Rag Axe",
                 configName: "ragAxeTitle",
                 value: false
+            },
+            {
+                title: "Wish",
+                configName: "wishTitle",
+                value: false
             }
         ]
     })

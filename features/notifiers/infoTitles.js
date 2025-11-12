@@ -6,6 +6,20 @@ register("chat", () => {
     Client.showTitle(`&dmeow`, "", 0, 60, 0)
 }).setCriteria("[NPC] Mort: Here, I found this map when I first entered the dungeon.")
 
+// maxor wish
+register("chat", () => {
+    if (!Settings().wishTitle || !Settings().toggle || !Settings().toggleBossfightTitles) return
+    Client.showTitle(`&dwish`, "", 0, 60, 0)
+    World.playSound("note.pling", 10, 0.75)
+}).setCriteria("⚠ Maxor is enraged! ⚠")
+
+// core wish
+register("chat", () => {
+    if (!Settings().wishTitle || !Settings().toggle || !Settings().toggleBossfightTitles) return
+    Client.showTitle(`&dwish`, "", 0, 60, 0)
+    World.playSound("note.pling", 10, 0.75)
+}).setCriteria("[BOSS] Goldor: You have done it, you destroyed the factory…")
+
 // rag axe
 register("chat", () => {
     if (!Settings().ragAxeTitle || !Settings().toggle || !Settings().toggleBossfightTitles) return
