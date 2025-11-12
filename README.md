@@ -8,12 +8,6 @@
 
 ---
 
-## What does CatboyAddons do ?
-
-CatboyAddons adds meowing back to skyblock, and other qol features mainly to replace neu for dungeon players
-
----
-
 ## Features
 
 ### General
@@ -65,4 +59,4 @@ CatboyAddons adds meowing back to skyblock, and other qol features mainly to rep
 
 ---
 
-> keep meowing
+> keep meowing 🐈
