@@ -1,10 +1,10 @@
-# CaboyAddons
+# CatboyAddons
 
 **The [ChatTriggers](https://chattriggers.com/) module for Hypixel SkyBlock Meowers**  
 
 ## Download
 
-🔗 [Visit Releases Page](https://github.com/catboylei/CatboyAddons/releases)
+[Visit Releases Page](https://github.com/catboylei/CatboyAddons/releases)
 
 ---
 
@@ -50,12 +50,12 @@
 
 ## **What to do if it breaks ?**  
 
-1. **Make sure you have the latest ChatTriggers version installed**
-2. **Make sure you have the dependencies installed**
+1. **Make sure you are using the latest ChatTriggers version** [Chattriggers Releases](https://github.com/ChatTriggers/ChatTriggers)
+2. **Make sure the dependencies are installed**
    `/ct import amaterasu`
    `/ct import pogdata`
-3. **Run** `/ct reload`
-4. Message @catboylei on discord with relevant info
+4. **Run** `/ct reload`
+5. if it still does not work after doing the above, message @catboylei on discord with relevant info
 
 ---
 
