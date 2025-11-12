@@ -315,7 +315,7 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         category: "Notifiers",
         subcategory: "Blood Rush",
         configName: "meowmeowmeow",
-        title: "Blood Rush Title Options",
+        title: "Boss Title Options",
         description: "Boss Title options",
         placeHolder: "meow",
         options: [
