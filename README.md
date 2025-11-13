@@ -27,7 +27,8 @@
 
 - Slot binding
 - Slot locking
-- Wardrobe buttons
+- Wardrobe keybinds
+- Inventory Buttons
 
 ### Notifiers
 
