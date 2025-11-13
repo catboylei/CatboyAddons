@@ -24,7 +24,7 @@
             {
                 "type": 6,
                 "name": "autoMeow",
-                "value": true
+                "value": false
             },
             {
                 "type": 4,
@@ -66,12 +66,12 @@
             {
                 "type": 1,
                 "name": "randomMeowsTime",
-                "value": 42
+                "value": 1
             },
             {
                 "type": 1,
                 "name": "randomMeowsChance",
-                "value": 69
+                "value": 100
             },
             {
                 "type": 6,
@@ -86,7 +86,7 @@
             {
                 "type": 6,
                 "name": "meowSpeak",
-                "value": true
+                "value": false
             }
         ]
     },
@@ -96,7 +96,7 @@
             {
                 "type": 6,
                 "name": "slotBinding",
-                "value": true
+                "value": false
             },
             {
                 "type": 10,
@@ -133,7 +133,7 @@
             {
                 "type": 6,
                 "name": "slotLocking",
-                "value": true
+                "value": false
             },
             {
                 "type": 8,
@@ -152,7 +152,7 @@
             {
                 "type": 6,
                 "name": "wardrobeHotkeys",
-                "value": true
+                "value": false
             },
             {
                 "type": 8,
@@ -176,7 +176,7 @@
             {
                 "type": 6,
                 "name": "toggleBloodRush",
-                "value": true
+                "value": false
             },
             {
                 "type": 8,
@@ -203,7 +203,7 @@
             {
                 "type": 6,
                 "name": "toggleBossfightTitles",
-                "value": true
+                "value": false
             },
             {
                 "type": 8,
@@ -211,6 +211,10 @@
                 "options": [
                     {
                         "name": "ragAxeTitle",
+                        "value": false
+                    },
+                    {
+                        "name": "wishTitle",
                         "value": false
                     }
                 ]
