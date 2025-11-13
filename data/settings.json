@@ -151,6 +151,41 @@
             },
             {
                 "type": 6,
+                "name": "inventoryButtons",
+                "value": false
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmeovfhsuf",
+                "options": [
+                    {
+                        "name": "hideDisabled",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "type": 5,
+                "name": "enabledColor",
+                "value": [
+                    255,
+                    206,
+                    255,
+                    80
+                ]
+            },
+            {
+                "type": 5,
+                "name": "disabledColor",
+                "value": [
+                    74,
+                    74,
+                    74,
+                    79
+                ]
+            },
+            {
+                "type": 6,
                 "name": "wardrobeHotkeys",
                 "value": false
             },
@@ -184,19 +219,19 @@
                 "options": [
                     {
                         "name": "witherKeySpawn",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "witherKeyPickup",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "witherDoorOpen",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "bloodOpen",
-                        "value": true
+                        "value": false
                     }
                 ]
             },

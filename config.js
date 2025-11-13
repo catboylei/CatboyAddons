@@ -242,6 +242,42 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
     })
     .addSwitch({
         category: "Inventory",
+        configName: "inventoryButtons",
+        title: "Inventory Buttons",
+        description: "toggles inventory buttons",
+        subcategory: "Inventory Buttons",
+    })
+    .addMultiCheckbox({
+        category: "Inventory",
+        subcategory: "Inventory Buttons",
+        configName: "meowmeowmeovfhsuf",
+        title: "Inventory Buttons Options",
+        description: "inventory buttons options",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "Fully Hide Disabled",
+                configName: "hideDisabled",
+                value: false
+            }
+        ]
+    })
+    .addColorPicker({
+        category: "Inventory",
+        subcategory: "Inventory Buttons",
+        configName: "enabledColor",
+        title: "Enabled Button Color",
+        description: "color of enabled buttons \nlow opacity highly recommended",
+    })
+    .addColorPicker({
+        category: "Inventory",
+        subcategory: "Inventory Buttons",
+        configName: "disabledColor",
+        title: "disabled Button Color",
+        description: "color of disabled buttons \nlow opacity highly recommended",
+    })
+    .addSwitch({
+        category: "Inventory",
         configName: "wardrobeHotkeys",
         title: "Wardrobe Keybinds",
         description: "toggles wardrobe keybinds",

@@ -9,5 +9,6 @@ import "./features/meowing/meowFilter.js"
 import "./features/inventory/slotBinding.js"
 import "./features/inventory/wardrobeKeybinds"
 import "./features/inventory/slotLocking.js"
+import "./features/inventory/inventoryButtons.js"
 
 import "./features/notifiers/infoTitles.js"

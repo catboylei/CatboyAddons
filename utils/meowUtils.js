@@ -6,6 +6,7 @@ export const C0EPacketClickWindow = Java.type("net.minecraft.network.play.client
 export const data = new PogObject("CatboyAddons/data", {
     slotBindings: {},
     slotBindingsHistory: {},
+    inventoryButtons: {}
 })
 
 export const regsexMeow = /\b(m[e,o,a,r,u]{1,6}(w+r*)*(o|p|r)*|n+y+a+|p+u+r{2,})[~!?.]*\b/i
