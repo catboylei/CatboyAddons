@@ -1,5 +1,6 @@
 import Settings from "../../config"
-import { sendWindowClick, data } from "../../utils/meowUtils"
+import { data } from "../../utils/utils"
+import { sendWindowClick } from "../../utils/packetUtils"
 
 // handles gui drop
 register ("PacketSent", (packet, event) => {

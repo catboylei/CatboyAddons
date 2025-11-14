@@ -1,7 +1,11 @@
 import Settings from "./config"
 
-import "./features/meowing/furrySounds"
-import "./features/meowing/randomMeows"
+import "./utils/meowUtils.js"
+import "./utils/utils.js"
+import "./utils/packetUtils.js"
+
+import "./features/meowing/furrySounds.js"
+import "./features/meowing/randomMeows.js"
 import "./features/meowing/autoMeow.js"
 import "./features/meowing/meowSpeak.js"
 import "./features/meowing/meowFilter.js"

@@ -1,5 +1,6 @@
 import Settings from "../../config"
-import { meow, woof, removeFormatting, prefix, hasMeow } from "../../utils/meowUtils"
+import { meow, woof, hasMeow } from "../../utils/meowUtils"
+import { prefix } from "../../utils/utils"
 
 let lastMeow = 0
 
@@ -8,7 +9,7 @@ register("chat", (event) => {
     if (!Settings().autoMeow || !Settings().toggle) return
 
     let msg = ChatLib.getChatMessage(event, true);
-    msg = removeFormatting(msg)
+    msg = ChatLib.removeFormatting(msg)
 
     // friend join
     if (Settings().autoMeowFriend && msg.startsWith('Friend > ') && msg.includes(' joined.')) {

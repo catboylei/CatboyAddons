@@ -1,5 +1,5 @@
 import Settings from "../../config"
-import { prefix, data, isInDungeon } from "../../utils/meowUtils" 
+import { prefix, data, isInDungeon } from "../../utils/utils" 
 
 let firstSlot = null
 

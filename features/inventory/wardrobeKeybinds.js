@@ -1,5 +1,6 @@
 import Settings from "../../config"
-import { sendWindowClick, prefix } from "../../utils/meowUtils" 
+import { sendWindowClick } from "../../utils/packetUtils" 
+import { prefix } from "../../utils/utils"
 
 let isWardrobeOpen = false
 let lastWardrobeSlot = -1

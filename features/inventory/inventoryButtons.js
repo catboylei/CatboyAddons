@@ -1,5 +1,5 @@
 import Settings from "../../config"
-import { prefix, data } from "../../utils/meowUtils"
+import { prefix, data } from "../../utils/utils"
 
 let centerX = 0
 let centerY = 0

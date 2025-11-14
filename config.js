@@ -1,6 +1,6 @@
 import Settings from "../Amaterasu/core/Settings"
 import DefaultConfig from "../Amaterasu/core/DefaultConfig"
-import { data, prefix } from "./utils/meowUtils"
+import { data, prefix } from "./utils/utils"
 
 const config = new DefaultConfig("CatboyAddons", "data/settings.json")
 // General
