@@ -9,6 +9,7 @@ import "./features/meowing/randomMeows.js"
 import "./features/meowing/autoMeow.js"
 import "./features/meowing/meowSpeak.js"
 import "./features/meowing/meowFilter.js"
+import "./features/meowing/meowGui.js"
 
 import "./features/inventory/slotBinding.js"
 import "./features/inventory/wardrobeKeybinds"

@@ -55,6 +55,11 @@
             },
             {
                 "type": 6,
+                "name": "meowGui",
+                "value": false
+            },
+            {
+                "type": 6,
                 "name": "meowSounds",
                 "value": false
             },

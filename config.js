@@ -88,6 +88,13 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
     })
     .addSwitch({
         category: "Meowing",
+        configName: "meowGui",
+        title: "Cat Inventory",
+        description: "cat inventory, sprites by @lana <3 \npatcher -> fixed inventory position",
+        subcategory: "Meow Inventory",
+    })
+    .addSwitch({
+        category: "Meowing",
         configName: "meowSounds",
         title: "Meow Sounds",
         description: "Play meow whenever someone meows in chat",
