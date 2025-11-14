@@ -161,7 +161,7 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         category: "Inventory",
         configName: "slotBindingTheme",
         title: "Slot Binding Theme",
-        description: "Select which preset you want (requires /ct load)",
+        description: "Select which preset you want",
         options: ["pink", "gay"],
         subcategory: "Slot Binding",
     })

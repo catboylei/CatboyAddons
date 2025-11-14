@@ -157,33 +157,35 @@ const opacity = 50
 let hotbarColors = []
 
 // ai slop themes....
-if (Settings().slotBindingTheme === 0) {
-    hotbarColors = [
-        Renderer.color(255, 182, 193, opacity), // Slot 0 - Light Pink 🌸
-        Renderer.color(255, 153, 204, opacity), // Slot 1 - Pink 💖
-        Renderer.color(255, 128, 191, opacity), // Slot 2 - Hot Pink 🌷
-        Renderer.color(238, 104, 210, opacity), // Slot 3 - Orchid 🌺
-        Renderer.color(221, 76, 192, opacity),  // Slot 4 - Fuchsia 🌸
-        Renderer.color(186, 85, 211, opacity),  // Slot 5 - Medium Purple 💜
-        Renderer.color(148, 0, 211, opacity),   // Slot 6 - Dark Violet 🔮
-        Renderer.color(123, 0, 179, opacity),   // Slot 7 - Dark Purple 🟣
-        Renderer.color(75, 0, 130, opacity)     // Slot 8 - Indigo 🟪
-    ]
-}
+register("step", () => {
+    if (Settings().slotBindingTheme === 0) {
+        hotbarColors = [
+            Renderer.color(255, 182, 193, opacity), // Slot 0 - Light Pink 🌸
+            Renderer.color(255, 153, 204, opacity), // Slot 1 - Pink 💖
+            Renderer.color(255, 128, 191, opacity), // Slot 2 - Hot Pink 🌷
+            Renderer.color(238, 104, 210, opacity), // Slot 3 - Orchid 🌺
+            Renderer.color(221, 76, 192, opacity),  // Slot 4 - Fuchsia 🌸
+            Renderer.color(186, 85, 211, opacity),  // Slot 5 - Medium Purple 💜
+            Renderer.color(148, 0, 211, opacity),   // Slot 6 - Dark Violet 🔮
+            Renderer.color(123, 0, 179, opacity),   // Slot 7 - Dark Purple 🟣
+            Renderer.color(75, 0, 130, opacity)     // Slot 8 - Indigo 🟪
+        ]
+    }
 
-if (Settings().slotBindingTheme === 1) {
-    hotbarColors = [
-        Renderer.color(228, 3, 3, opacity),    // Slot 0 - Pride Red ❤️
-        Renderer.color(255, 140, 0, opacity),  // Slot 1 - Pride Orange 🧡
-        Renderer.color(255, 237, 0, opacity),  // Slot 2 - Pride Yellow 💛
-        Renderer.color(0, 128, 38, opacity),   // Slot 3 - Pride Green 💚
-        Renderer.color(0, 77, 255, opacity),   // Slot 4 - Pride Blue 💙
-        Renderer.color(117, 7, 135, opacity),  // Slot 5 - Pride Purple 💜
-        Renderer.color(91, 206, 250, opacity), // Slot 6 - Trans Light Blue 💙
-        Renderer.color(245, 169, 184, opacity),// Slot 7 - Trans Pink 💖
-        Renderer.color(255, 255, 255, opacity) // Slot 8 - Trans White 🤍
-    ]
-}
+    if (Settings().slotBindingTheme === 1) {
+        hotbarColors = [
+            Renderer.color(228, 3, 3, opacity),    // Slot 0 - Pride Red ❤️
+            Renderer.color(255, 140, 0, opacity),  // Slot 1 - Pride Orange 🧡
+            Renderer.color(255, 237, 0, opacity),  // Slot 2 - Pride Yellow 💛
+            Renderer.color(0, 128, 38, opacity),   // Slot 3 - Pride Green 💚
+            Renderer.color(0, 77, 255, opacity),   // Slot 4 - Pride Blue 💙
+            Renderer.color(117, 7, 135, opacity),  // Slot 5 - Pride Purple 💜
+            Renderer.color(91, 206, 250, opacity), // Slot 6 - Trans Light Blue 💙
+            Renderer.color(245, 169, 184, opacity),// Slot 7 - Trans Pink 💖
+            Renderer.color(255, 255, 255, opacity) // Slot 8 - Trans White 🤍
+        ]
+    }
+}).setFps(1)
 
 // draws outline on specified slot coords
 function drawSlotOutline(x, y, size = 16, thickness = 1, color = Renderer.color(255, 255, 255, 255)) {
