@@ -259,6 +259,11 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
                 title: "Fully Hide Disabled",
                 configName: "hideDisabled",
                 value: false
+            },
+            {
+                title: "Button Sounds",
+                configName: "invButtonsSound",
+                value: false
             }
         ]
     })

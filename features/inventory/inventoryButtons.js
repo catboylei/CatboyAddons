@@ -117,6 +117,7 @@ register("guiMouseClick", (mouseX, mouseY, mbtn, gui, event) => {
 
     // handle left click (execute action)
     if (mbtn === 0 && data.inventoryButtons[buttonHovered(mouseX, mouseY)][2]) {
+        if (Settings().invButtonsSound) (Settings().toggleWoof) ? World.playSound("mob.wolf.bark", 0.5, 1) : World.playSound("mob.cat.meow", 0.5, 1)
         ChatLib.say(data.inventoryButtons[buttonHovered(mouseX, mouseY)][3])
     }
 
