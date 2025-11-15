@@ -53,9 +53,10 @@
 ## **What to do if it breaks ?**  
 
 1. **Make sure you are using the latest ChatTriggers version** [Chattriggers Releases](https://github.com/ChatTriggers/ChatTriggers)
-2. **Make sure the dependencies are installed**
-   `/ct import amaterasu`
-   `/ct import pogdata`
+2. **Make sure the dependencies are installed**  
+   `/ct import amaterasu`  
+   `/ct import pogdata`  
+   `/ct import bloomcore`
 4. **Run** `/ct reload`
 5. if it still does not work after doing the above, message @catboylei on discord with relevant info
 
