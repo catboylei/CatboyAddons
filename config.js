@@ -399,6 +399,38 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
             }
         ]
     })
+    .addSwitch({
+        category: "Notifiers",
+        configName: "toggleClearTitles",
+        title: "Toggle Clear Titles",
+        description: "toggle clear titles",
+        subcategory: "Clear"
+    })
+    .addMultiCheckbox({
+        category: "Notifiers",
+        subcategory: "Clear",
+        configName: "meowmeowmmeoeow",
+        title: "Clear Title Options",
+        description: "Clear Title options",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "270 score",
+                configName: "Stitle",
+                value: false
+            },
+            {
+                title: "300 score",
+                configName: "SPlustitle",
+                value: false
+            },
+            {
+                title: "mimic killed",
+                configName: "mimicTitle",
+                value: false
+            }
+        ]
+    })
 
 const setting = new Settings("CatboyAddons", config, "data/scheme-meow.json")
     .setCommand("CatboyAddons", ["cba", "catboyaddons"])

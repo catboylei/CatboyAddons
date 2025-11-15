@@ -56,7 +56,7 @@
             {
                 "type": 6,
                 "name": "meowGui",
-                "value": false
+                "value": true
             },
             {
                 "type": 8,
@@ -273,6 +273,29 @@
                     },
                     {
                         "name": "wishTitle",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "type": 6,
+                "name": "toggleClearTitles",
+                "value": false
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmmeoeow",
+                "options": [
+                    {
+                        "name": "Stitle",
+                        "value": false
+                    },
+                    {
+                        "name": "SPlustitle",
+                        "value": false
+                    },
+                    {
+                        "name": "mimicTitle",
                         "value": false
                     }
                 ]

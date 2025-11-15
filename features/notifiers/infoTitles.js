@@ -1,3 +1,4 @@
+import Dungeon from "../../../BloomCore/dungeons/Dungeon"
 import Settings from "../../config"
 
 // initializes minecraft title renderer when dungeon starts
@@ -75,3 +76,35 @@ register("chat", () => {
     Client.showTitle(`&dBlood Started!`, "", 0, 30, 0)
     World.playSound("note.pling", 10, 0.75)
 }).setCriteria("[BOSS] The Watcher: Things feel a little more roomy now, eh?")
+
+let announced270 = false
+let announced300 = false
+let announcedMimic = false
+register("worldUnload", () => {
+    announced270 = false
+    announced300 = false
+    announcedMimic= false
+})
+
+let SplusSound = new Sound({source: "Splus.ogg"})
+
+// clear titles
+register("step", () => {
+    if (!Dungeon.inDungeon || !Settings().toggleClearTitles) return
+    if (!announced270 && Dungeon.score >= 270 && Settings().Stitle) {
+        Client.showTitle(`&d270 score`, "", 0, 30, 0)
+        //SplusSound.play()
+        World.playSound("note.pling", 10, 0.75)
+        announced270 = true
+    }
+    if (!announced300 && Dungeon.score >= 300 && Settings().SPlustitle) {
+        Client.showTitle(`&d300 score`, "", 0, 30, 0)
+        SplusSound.play()
+        announced300 = true
+    }
+    if (!announcedMimic && Dungeon.mimicKilled && Settings().mimicTitle) {
+        Client.showTitle(`&dmimic killed`, "", 0, 30, 0)
+        World.playSound("note.pling", 10, 0.75)
+        announcedMimic = true
+    }
+}).setFps(5)
