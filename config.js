@@ -89,9 +89,29 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
     .addSwitch({
         category: "Meowing",
         configName: "meowGui",
-        title: "Cat Inventory",
-        description: "cat inventory, sprites by @lana <3 \npatcher -> fixed inventory position",
-        subcategory: "Meow Inventory",
+        title: "Cat Menus",
+        description: "cat menus, sprites by @lana <3 \npatcher -> fixed inventory position",
+        subcategory: "Meow Menus",
+    })
+    .addMultiCheckbox({
+        category: "Meowing",
+        subcategory: "Meow Menus",
+        configName: "meowmeowmeomeowmeowwmeow",
+        title: "Cat Menu Options",
+        description: "menus to display cat in",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "Inventory",
+                configName: "meowInventory",
+                value: false
+            },
+            {
+                title: "Chest Guis",
+                configName: "meowChest",
+                value: false,
+            }
+        ]
     })
     .addSwitch({
         category: "Meowing",

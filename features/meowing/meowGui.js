@@ -41,12 +41,27 @@ register("step", () => {
 // renderer
 register("guiRender", (_, __, gui) => {
     if (!Settings().meowGui || !Settings().toggle) return
-    if (!(gui instanceof net.minecraft.client.gui.inventory.GuiInventory)) return
 
-    Renderer.translate(0,0,200)
-    Renderer.drawImage(left_ear, centerX - 100, centerY - 178, leftEarWidth, leftEarHeight)
-    Renderer.translate(0,0,200)
-    Renderer.drawImage(right_ear, centerX + 20, centerY - 158, rightEarWidth, rightEarHeight)
-    Renderer.translate(0,0,200)
-    Renderer.drawImage(tail, centerX + 87, centerY - 65, tailWidth, tailHeight)
+    if (gui instanceof net.minecraft.client.gui.inventory.GuiInventory && Settings().meowInventory) {
+        Renderer.translate(0,0,200)
+        Renderer.drawImage(left_ear, centerX - 100, centerY - 178, leftEarWidth, leftEarHeight)
+        Renderer.translate(0,0,200)
+        Renderer.drawImage(right_ear, centerX + 20, centerY - 158, rightEarWidth, rightEarHeight)
+        Renderer.translate(0,0,200)
+        Renderer.drawImage(tail, centerX + 87, centerY - 65, tailWidth, tailHeight)
+    }
+
+    if (gui instanceof net.minecraft.client.gui.inventory.GuiChest && Settings().meowChest) {
+        const size = (Player.getContainer().getSize())
+        
+        let leftOffset = 116 + size
+        let rightOffset = 96 + size
+
+        Renderer.translate(0,0,200)
+        Renderer.drawImage(left_ear, centerX - 100, centerY - leftOffset, leftEarWidth, leftEarHeight)
+        Renderer.translate(0,0,200)
+        Renderer.drawImage(right_ear, centerX + 20, centerY - rightOffset, rightEarWidth, rightEarHeight)
+        Renderer.translate(0,0,200)
+        Renderer.drawImage(tail, centerX + 87, centerY - 65, tailWidth, tailHeight)
+    }
 })
