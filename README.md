@@ -21,7 +21,8 @@
 - Meow sounds
 - Meow speak
 - Configurable meow filter
-- MORE MEOWING !!!
+- Configurable random meows
+- cat inventory
 
 ### Inventory
 
