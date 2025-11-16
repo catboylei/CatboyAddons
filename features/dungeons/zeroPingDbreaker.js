@@ -12,7 +12,7 @@ function setBlockAt(x, y, z, id) {
     world.func_175689_h(blockPos)
 }
 
-const blacklist = [166, 7, 137, 46, 54, 146, 120, 119, 29, 34, 33, 69, 77, 154]
+const blacklist = [7, 29, 33, 34, 36, 46, 54, 69, 77, 119, 120, 137, 144, 146, 166] // this is skidded from dbe
 
 register("packetSent", (packet) => {
     if (!Settings().zeroPingDb || !Settings().toggle) return
@@ -26,3 +26,5 @@ register("packetSent", (packet) => {
     setBlockAt(block.getX(), block.getY(), block.getZ(), 0)
     if (Settings().DbSounds) World.playSound("note.pling", 10, 1)
 }).setFilteredClass(net.minecraft.network.play.client.C07PacketPlayerDigging) // this comment was brought to you by the cat   vvvvvvvvvvvvvkjjjjjjjjjjjjjjjjj,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+// we are NOT doing a puzzle check just dont mine shit in puzzles lmao
