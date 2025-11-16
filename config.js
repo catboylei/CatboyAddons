@@ -432,6 +432,22 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         ]
     })
     .addSwitch({
+        category: "Notifiers",
+        configName: "notifyLag",
+        title: "Notify Lag",
+        description: "notify in chat when server lags out",
+        subcategory: "Lag Notifier"
+    })
+    .addSlider({
+        category: "Notifiers",
+        configName: "minLag",
+        title: "Minimum Lag",
+        description: "minimum time per lag spike to notify",
+        subcategory: "Lag Notifier",
+        options: [200, 2000],
+        value: 500
+    })
+    .addSwitch({
         category: "Dungeons",
         configName: "zeroPingDb",
         title: "Zero Ping Dungeonbreaker",

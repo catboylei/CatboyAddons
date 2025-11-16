@@ -299,6 +299,16 @@
                         "value": false
                     }
                 ]
+            },
+            {
+                "type": 6,
+                "name": "notifyLag",
+                "value": false
+            },
+            {
+                "type": 1,
+                "name": "minLag",
+                "value": 459
             }
         ]
     },
@@ -308,7 +318,7 @@
             {
                 "type": 6,
                 "name": "zeroPingDb",
-                "value": false
+                "value": true
             },
             {
                 "type": 8,
