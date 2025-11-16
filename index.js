@@ -17,3 +17,5 @@ import "./features/inventory/slotLocking.js"
 import "./features/inventory/inventoryButtons.js"
 
 import "./features/notifiers/infoTitles.js"
+
+import "./features/dungeons/zeroPingDbreaker.js"

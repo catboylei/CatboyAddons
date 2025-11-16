@@ -431,6 +431,28 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
             }
         ]
     })
+    .addSwitch({
+        category: "Dungeons",
+        configName: "zeroPingDb",
+        title: "Zero Ping Dungeonbreaker",
+        description: "makes dungeonbreaker insta break all blocks",
+        subcategory: "Zero Ping Dungeonbreaker",
+    })
+    .addMultiCheckbox({
+        category: "Dungeons",
+        subcategory: "Zero Ping Dungeonbreaker",
+        configName: "meowmeowmmeoeowmeowmeowmeow",
+        title: "Zero Ping Dungeonbreaker Options",
+        description: "options for zero ping dungeonbreaker",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "Dungeonbreaker sound",
+                configName: "DbSounds",
+                value: false
+            }
+        ]
+    })
 
 const setting = new Settings("CatboyAddons", config, "data/scheme-meow.json")
     .setCommand("CatboyAddons", ["cba", "catboyaddons"])

@@ -301,5 +301,25 @@
                 ]
             }
         ]
+    },
+    {
+        "category": "Dungeons",
+        "settings": [
+            {
+                "type": 6,
+                "name": "zeroPingDb",
+                "value": false
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmmeoeowmeowmeowmeow",
+                "options": [
+                    {
+                        "name": "DbSounds",
+                        "value": false
+                    }
+                ]
+            }
+        ]
     }
 ]
