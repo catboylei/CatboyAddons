@@ -20,3 +20,5 @@ import "./features/notifiers/infoTitles.js"
 import "./features/notifiers/lagNotifier.js"
 
 import "./features/dungeons/zeroPingDbreaker.js"
+
+import "./features/slop/singleplayerSimu.js"

@@ -469,6 +469,43 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
             }
         ]
     })
+    .addSwitch({
+        category: "Slop",
+        configName: "toggleSimu",
+        title: "Singleplayer Simulation",
+        description: "simulates hypixel features in singleplayer eg. etherwarp",
+        subcategory: "Singleplayer",
+    })
+    .addMultiCheckbox({
+        category: "Slop",
+        subcategory: "Singleplayer",
+        configName: "meowmeowmmeoemejbowmeowmeowmeow",
+        title: "Singleplayer Simulation Options",
+        description: "options for singleplayer simu",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "Lava Bounce",
+                configName: "singleplayerLavaBounce",
+                value: false
+            },
+            {
+                title: "Super Bounce",
+                configName: "singleplayerSuperbounce",
+                value: false 
+            },
+            {
+                title: "Etherwarp",
+                configName: "singleplayerEwarp",
+                value: false 
+            },
+            {
+                title: "500 Speed",
+                configName: "singleplayerSpeed",
+                value: false 
+            }
+        ]
+    })
 
 const setting = new Settings("CatboyAddons", config, "data/scheme-meow.json")
     .setCommand("CatboyAddons", ["cba", "catboyaddons"])

@@ -331,5 +331,37 @@
                 ]
             }
         ]
+    },
+    {
+        "category": "Slop",
+        "settings": [
+            {
+                "type": 6,
+                "name": "toggleSimu",
+                "value": false
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmmeoemejbowmeowmeowmeow",
+                "options": [
+                    {
+                        "name": "singleplayerLavaBounce",
+                        "value": true
+                    },
+                    {
+                        "name": "singleplayerSuperbounce",
+                        "value": true
+                    },
+                    {
+                        "name": "singleplayerEwarp",
+                        "value": true
+                    },
+                    {
+                        "name": "singleplayerSpeed",
+                        "value": true
+                    }
+                ]
+            }
+        ]
     }
 ]
