@@ -495,7 +495,7 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
                 value: false 
             },
             {
-                title: "Etherwarp",
+                title: "AOTV",
                 configName: "singleplayerEwarp",
                 value: false 
             },
