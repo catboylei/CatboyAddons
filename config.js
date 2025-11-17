@@ -22,6 +22,12 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
             ChatLib.chat(`${prefix} Woof mode is now ${newvalue ? "&dEnabled" : "&7Disabled"}`)
         }
     })    
+    .addSwitch({
+        category: "General",
+        configName: "welcomeMessage",
+        title: "Welcome Message",
+        description: "toggle welcome message on/off",
+    })
     .addButton({
         category: "General",
         configName: "paws",

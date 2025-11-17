@@ -13,6 +13,11 @@
                 "value": false
             },
             {
+                "type": 6,
+                "name": "welcomeMessage",
+                "value": true
+            },
+            {
                 "type": 2,
                 "name": "paws"
             }
