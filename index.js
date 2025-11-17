@@ -18,6 +18,7 @@ import "./features/inventory/inventoryButtons.js"
 
 import "./features/notifiers/infoTitles.js"
 import "./features/notifiers/lagNotifier.js"
+import "./features/notifiers/dungeonLagTracker.js"
 
 import "./features/dungeons/zeroPingDbreaker.js"
 

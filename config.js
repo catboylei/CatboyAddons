@@ -454,6 +454,13 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         value: 500
     })
     .addSwitch({
+        category: "Notifiers",
+        configName: "announceDungeonLag",
+        title: "Announce Dungeon Lag",
+        description: "notifies party of time lost to lag at the end of a run",
+        subcategory: "Lag Notifier"
+    })
+    .addSwitch({
         category: "Dungeons",
         configName: "zeroPingDb",
         title: "Zero Ping Dungeonbreaker",

@@ -314,6 +314,11 @@
                 "type": 1,
                 "name": "minLag",
                 "value": 459
+            },
+            {
+                "type": 6,
+                "name": "announceDungeonLag",
+                "value": false
             }
         ]
     },
