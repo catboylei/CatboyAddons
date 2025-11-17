@@ -3,7 +3,7 @@ import { data, prefix } from "../../utils/utils"
 
 // im too tired to comment this shit its 3 in the morning set me free from the mines please
 register("messageSent", (msg, event) => {
-    if (!Settings().toggle || !Settings().customAliases) return
+    if (!Settings().toggle || !Settings().customAliases || !msg.startsWith("/")) return
 
     if (msg.startsWith("/aliashelp")) {
         cancel(event)
@@ -32,6 +32,7 @@ register("messageSent", (msg, event) => {
         const meow = msg.split(' ')
 
         let alias = meow[1]
+
         if (!(alias.startsWith("/"))) alias = `/${alias}`
 
         for (key in data.customAliases) {
@@ -44,7 +45,6 @@ register("messageSent", (msg, event) => {
         }
     }
 
-    if (!msg.startsWith("/")) return
     for (key in data.customAliases) {
         if (msg === key) {
             cancel(event)
