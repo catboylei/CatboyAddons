@@ -42,7 +42,7 @@ register("chat", (event) => {
     // cooldown logic
     const now = Date.now()
     if (now - lastMeow < cooldown) {
-        setTimeout(() => {ChatLib.chat(`${prefix} &dAuto meow is on cooldown, you meowed too hard...`)}, 10)
+        //setTimeout(() => {ChatLib.chat(`${prefix} &dAuto meow is on cooldown, you meowed too hard...`)}, 10)
         return
     }
 
