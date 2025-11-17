@@ -4,7 +4,8 @@ import PogObject from "../../PogData"
 export const data = new PogObject("CatboyAddons/data", {
     slotBindings: {},
     slotBindingsHistory: {},
-    inventoryButtons: {}
+    inventoryButtons: {},
+    customAliases: {}
 })
 
 export const prefix = ["§5[C§dat§fbo§byA§fdd§don§5s]§r"]

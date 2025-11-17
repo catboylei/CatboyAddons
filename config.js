@@ -506,6 +506,13 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
             }
         ]
     })
+    .addSwitch({
+        category: "Slop",
+        configName: "customAliases",
+        title: "Custom Command Aliases",
+        description: "lets you set custom command aliases \n/aliashelp",
+        subcategory: "Aliases",
+    })
 
 const setting = new Settings("CatboyAddons", config, "data/scheme-meow.json")
     .setCommand("CatboyAddons", ["cba", "catboyaddons"])

@@ -361,6 +361,11 @@
                         "value": true
                     }
                 ]
+            },
+            {
+                "type": 6,
+                "name": "customAliases",
+                "value": false
             }
         ]
     }
