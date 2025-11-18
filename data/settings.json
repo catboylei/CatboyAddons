@@ -356,19 +356,19 @@
                 "options": [
                     {
                         "name": "singleplayerLavaBounce",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "singleplayerSuperbounce",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "singleplayerEwarp",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "singleplayerSpeed",
-                        "value": true
+                        "value": false
                     }
                 ]
             },
