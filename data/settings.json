@@ -339,6 +339,79 @@
                         "value": false
                     }
                 ]
+            },
+            {
+                "type": 6,
+                "name": "posMessages",
+                "value": true
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmmeoeowmeowmeomneowwmeow",
+                "options": [
+                    {
+                        "name": "inp2",
+                        "value": true
+                    },
+                    {
+                        "name": "atss",
+                        "value": true
+                    },
+                    {
+                        "name": "atlowee2",
+                        "value": true
+                    },
+                    {
+                        "name": "athighee2",
+                        "value": true
+                    },
+                    {
+                        "name": "ati3",
+                        "value": true
+                    },
+                    {
+                        "name": "atlowee3",
+                        "value": true
+                    },
+                    {
+                        "name": "athighee3",
+                        "value": true
+                    },
+                    {
+                        "name": "atcore",
+                        "value": true
+                    },
+                    {
+                        "name": "ati4",
+                        "value": true
+                    },
+                    {
+                        "name": "atmid",
+                        "value": true
+                    },
+                    {
+                        "name": "inp5",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "type": 8,
+                "name": "meowmeowmmeoeowmeowmeompurrneowwmeow",
+                "options": [
+                    {
+                        "name": "posDisplay",
+                        "value": true
+                    },
+                    {
+                        "name": "posTitles",
+                        "value": true
+                    },
+                    {
+                        "name": "posSounds",
+                        "value": true
+                    }
+                ]
             }
         ]
     },
@@ -364,7 +437,7 @@
                     },
                     {
                         "name": "singleplayerEwarp",
-                        "value": false
+                        "value": true
                     },
                     {
                         "name": "singleplayerSpeed",

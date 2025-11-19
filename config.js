@@ -483,6 +483,103 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         ]
     })
     .addSwitch({
+        category: "Dungeons",
+        configName: "posMessages",
+        title: "Positionnal messages",
+        description: "Party > [MVP+] catboylei: At Core!",
+        subcategory: "Positionnal Messages",
+    })
+    .addMultiCheckbox({
+        category: "Dungeons",
+        subcategory: "Positionnal Messages",
+        configName: "meowmeowmmeoeowmeowmeomneowwmeow",
+        title: "Message Locations",
+        description: "locations for postionnal messages",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "in p2",
+                configName: "inp2",
+                value: false
+            },
+            {
+                title: "at ss",
+                configName: "atss",
+                value: false
+            },
+            {
+                title: "at low ee2",
+                configName: "atlowee2",
+                value: false
+            },
+            {
+                title: "at high ee2",
+                configName: "athighee2",
+                value: false
+            },
+            {
+                title: "at i3",
+                configName: "ati3",
+                value: false
+            },
+            {
+                title: "at low ee3",
+                configName: "atlowee3",
+                value: false
+            },
+            {
+                title: "at high ee3",
+                configName: "athighee3",
+                value: false
+            },
+            {
+                title: "at core",
+                configName: "atcore",
+                value: false
+            },
+            {
+                title: "at i4",
+                configName: "ati4",
+                value: false
+            },
+            {
+                title: "at mid",
+                configName: "atmid",
+                value: false
+            },
+            {
+                title: "in p5",
+                configName: "inp5",
+                value: false
+            },
+        ]
+    })
+    .addMultiCheckbox({
+        category: "Dungeons",
+        subcategory: "Positionnal Messages",
+        configName: "meowmeowmmeoeowmeowmeompurrneowwmeow",
+        title: "Positionnal Messages Options",
+        description: "settings for pos messages",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "Display",
+                configName: "posDisplay",
+                value: true
+            },
+            {
+                title: "Titles",
+                configName: "posTitles",
+                value: true
+            },
+            {
+                title: "Sounds",
+                configName: "posSounds",
+                value: true
+            },
+        ]
+    })
+    .addSwitch({
         category: "Slop",
         configName: "toggleSimu",
         title: "Singleplayer Simulation",
