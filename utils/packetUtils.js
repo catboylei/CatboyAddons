@@ -2,6 +2,8 @@ export const C0EPacketClickWindow = Java.type("net.minecraft.network.play.client
 export const S2FPacketSetSlot = Java.type("net.minecraft.network.play.server.S2FPacketSetSlot")
 export const S32PacketConfirmTransaction = Java.type("net.minecraft.network.play.server.S32PacketConfirmTransaction")
 export const C08PacketPlayerBlockPlacement = Java.type("net.minecraft.network.play.client.C08PacketPlayerBlockPlacement")
+export const S08PacketPlayerPosLook = Java.type("net.minecraft.network.play.server.S08PacketPlayerPosLook")
+export const S03PacketTimeUpdate = Java.type("net.minecraft.network.play.server.S03PacketTimeUpdate")
 
 // sends a gui click packet, default parameters send a left click in any gui
 export function sendWindowClick(windowId = 0, slot=0, clickType=0, actionNumber=0) {

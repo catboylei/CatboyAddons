@@ -22,6 +22,7 @@ import "./features/notifiers/dungeonLagTracker.js"
 
 import "./features/dungeons/zeroPingDbreaker.js"
 import "./features/dungeons/posMessages.js"
+import "./features/dungeons/deathTick.js"
 
 import "./features/slop/singleplayerSimu.js"
 import "./features/slop/customAliases.js"

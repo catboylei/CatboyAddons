@@ -580,6 +580,22 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         ]
     })
     .addSwitch({
+        category: "Dungeons",
+        configName: "deathTick",
+        title: "Death Tick Display",
+        description: "Displays Death Tick",
+        subcategory: "Death Tick",
+    })
+    .addSlider({
+        category: "Dungeons",
+        configName: "deathTickScale",
+        title: "Display Scale",
+        description: "scale of the death tick display",
+        subcategory: "Death Tick",
+        options: [0.5, 3],
+        value: 1.5
+    })
+    .addSwitch({
         category: "Slop",
         configName: "toggleSimu",
         title: "Singleplayer Simulation",
