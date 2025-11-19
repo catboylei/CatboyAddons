@@ -35,6 +35,14 @@
 
 - Blood rush titles
 - Boss titles
+- Clear titles
+- Dungeon Lag Announcer
+- Lag Notifier
+
+### Dungeons
+
+- Zero Ping Dungeonbreaker
+- Pos Messages
 
 ---
 
