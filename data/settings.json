@@ -343,7 +343,7 @@
             {
                 "type": 6,
                 "name": "posMessages",
-                "value": true
+                "value": false
             },
             {
                 "type": 8,
@@ -405,13 +405,23 @@
                     },
                     {
                         "name": "posTitles",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "posSounds",
                         "value": true
                     }
                 ]
+            },
+            {
+                "type": 6,
+                "name": "deathTick",
+                "value": true
+            },
+            {
+                "type": 1,
+                "name": "deathTickScale",
+                "value": 1.38
             }
         ]
     },
@@ -429,11 +439,11 @@
                 "options": [
                     {
                         "name": "singleplayerLavaBounce",
-                        "value": false
+                        "value": true
                     },
                     {
                         "name": "singleplayerSuperbounce",
-                        "value": false
+                        "value": true
                     },
                     {
                         "name": "singleplayerEwarp",
@@ -441,7 +451,7 @@
                     },
                     {
                         "name": "singleplayerSpeed",
-                        "value": false
+                        "value": true
                     }
                 ]
             },
