@@ -410,6 +410,10 @@
                     {
                         "name": "posSounds",
                         "value": true
+                    },
+                    {
+                        "name": "triggerOnce",
+                        "value": true
                     }
                 ]
             },
@@ -421,7 +425,7 @@
             {
                 "type": 1,
                 "name": "deathTickScale",
-                "value": 1.38
+                "value": 1.5
             }
         ]
     },

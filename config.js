@@ -577,6 +577,11 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
                 configName: "posSounds",
                 value: true
             },
+            {
+                title: "Trigger Once",
+                configName: "triggerOnce",
+                value: true
+            },
         ]
     })
     .addSwitch({

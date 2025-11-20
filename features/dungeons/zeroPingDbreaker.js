@@ -15,6 +15,7 @@ function setBlockAt(x, y, z, id) {
 const blacklist = [7, 29, 33, 34, 36, 46, 54, 69, 77, 119, 120, 137, 144, 146, 166] // this is skidded from dbe
 
 register("packetSent", (packet) => {
+    try {
     if (!Settings().zeroPingDb || !Settings().toggle) return
     const block = Player.lookingAt()
     const blockID = block?.getType()?.getID()
@@ -25,6 +26,7 @@ register("packetSent", (packet) => {
     
     setBlockAt(block.getX(), block.getY(), block.getZ(), 0)
     if (Settings().DbSounds) World.playSound("note.pling", 10, 1)
+    } catch(e) {`zpdb exploded report this thanks - ${e}`}
 }).setFilteredClass(net.minecraft.network.play.client.C07PacketPlayerDigging) // this comment was brought to you by the cat   vvvvvvvvvvvvvkjjjjjjjjjjjjjjjjj,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 // we are NOT doing a puzzle check just dont mine shit in puzzles lmao
