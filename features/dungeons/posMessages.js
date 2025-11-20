@@ -84,7 +84,7 @@ register("step", () => {
         data.save()
     }
 
-    ChatLib.chat(`pc ${pos}`)
+    ChatLib.command(`pc ${pos}`)
     if (Settings().posSounds) Settings().toggleWoof ? World.playSound("mob.wolf.bark", 0.5, 1) : World.playSound("mob.cat.meow", 0.5, 1)
     if (Settings().posTitles) Client.showTitle(`&d${pos}`, "", 0, 30, 0)
 })
