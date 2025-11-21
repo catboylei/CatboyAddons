@@ -28,7 +28,7 @@ import "./features/dungeons/deathTick.js"
 import "./features/slop/singleplayerSimu.js"
 import "./features/slop/customAliases.js"
 
-import "./features/playerStats/statsCommand.js"
+import "./features/playerStats/statsView.js"
 
 if (Settings().welcomeMessage) {
     ChatLib.chat(`

@@ -17,6 +17,14 @@ register("command", (ign, floor) => {
     })
 }).setName('stats')
 
+register("chat", (ign) => {
+    if (!Settings().toggle || !Settings().statsParty) return
+
+    getPlayer(ign).then(player => {
+        ChatLib.chat(genMsgWithHover(player, 'F7'))
+    })
+}).setCriteria("Party Finder > ${ign} joined the dungeon group! ${class}")
+
 function genMsgWithHover(player, floor) {
     if (!player.uuid) return `${prefix} &cInvalid Player Name`
     

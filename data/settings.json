@@ -5,7 +5,7 @@
             {
                 "type": 6,
                 "name": "toggle",
-                "value": true
+                "value": false
             },
             {
                 "type": 6,
@@ -15,7 +15,7 @@
             {
                 "type": 6,
                 "name": "welcomeMessage",
-                "value": true
+                "value": false
             },
             {
                 "type": 2,
@@ -42,7 +42,7 @@
                 "options": [
                     {
                         "name": "autoMeowBack",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "gigaAutoMeow",
@@ -50,7 +50,7 @@
                     },
                     {
                         "name": "autoMeowParty",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "autoMeowFriend",
@@ -61,7 +61,7 @@
             {
                 "type": 6,
                 "name": "meowGui",
-                "value": true
+                "value": false
             },
             {
                 "type": 8,
@@ -69,11 +69,11 @@
                 "options": [
                     {
                         "name": "meowInventory",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "meowChest",
-                        "value": true
+                        "value": false
                     }
                 ]
             },
@@ -90,12 +90,12 @@
             {
                 "type": 1,
                 "name": "randomMeowsTime",
-                "value": 1
+                "value": 42
             },
             {
                 "type": 1,
                 "name": "randomMeowsChance",
-                "value": 100
+                "value": 69
             },
             {
                 "type": 6,
@@ -125,7 +125,7 @@
             {
                 "type": 10,
                 "name": "slotBindingKeybind",
-                "value": 38
+                "value": 0
             },
             {
                 "type": 3,
@@ -138,11 +138,11 @@
                 "options": [
                     {
                         "name": "slotBindingThemeToggle",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "slotBindingSound",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "slotBindingDungeon",
@@ -169,7 +169,7 @@
                     },
                     {
                         "name": "noDrop",
-                        "value": true
+                        "value": false
                     }
                 ]
             },
@@ -188,7 +188,7 @@
                     },
                     {
                         "name": "invButtonsSound",
-                        "value": true
+                        "value": false
                     }
                 ]
             },
@@ -197,19 +197,19 @@
                 "name": "enabledColor",
                 "value": [
                     255,
-                    206,
                     255,
-                    80
+                    255,
+                    255
                 ]
             },
             {
                 "type": 5,
                 "name": "disabledColor",
                 "value": [
-                    74,
-                    74,
-                    74,
-                    79
+                    255,
+                    255,
+                    255,
+                    255
                 ]
             },
             {
@@ -227,7 +227,7 @@
                     },
                     {
                         "name": "pinglessWardrobe",
-                        "value": true
+                        "value": false
                     }
                 ]
             }
@@ -313,7 +313,7 @@
             {
                 "type": 1,
                 "name": "minLag",
-                "value": 459
+                "value": 500
             },
             {
                 "type": 6,
@@ -351,47 +351,47 @@
                 "options": [
                     {
                         "name": "inp2",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "atss",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "atlowee2",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "athighee2",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "ati3",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "atlowee3",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "athighee3",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "atcore",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "ati4",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "atmid",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "inp5",
-                        "value": true
+                        "value": false
                     }
                 ]
             },
@@ -413,7 +413,7 @@
                     },
                     {
                         "name": "triggerOnce",
-                        "value": false
+                        "value": true
                     }
                 ]
             },
@@ -432,6 +432,10 @@
     {
         "category": "Player Stats",
         "settings": [
+            {
+                "type": 9,
+                "name": "hi"
+            },
             {
                 "type": 6,
                 "name": "statsCommand",
@@ -458,19 +462,19 @@
                 "options": [
                     {
                         "name": "singleplayerLavaBounce",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "singleplayerSuperbounce",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "singleplayerEwarp",
-                        "value": true
+                        "value": false
                     },
                     {
                         "name": "singleplayerSpeed",
-                        "value": true
+                        "value": false
                     }
                 ]
             },

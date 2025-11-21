@@ -600,11 +600,25 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         options: [0.5, 3],
         value: 1.5
     })
+    .addTextParagraph({
+        category: "Player Stats",
+        configName: "hi",
+        title: "Auto Kick / Party Finder Stats",
+        description: "&4I will NOT be adding auto kick or party finder display to this module. \nthis only serves to adds a convenient quick view of sbd's data.\n&4Use sbd directly for those features.",
+        subcategory: "Stats Command"
+    })
     .addSwitch({
         category: "Player Stats",
         configName: "statsCommand",
         title: "Stats Command",
         description: "displays a quick overview of dungeon stats \nusage: /stats <player> <floor> \n(defaults to f7 if no floor given)",
+        subcategory: "Stats Command",
+    })
+    .addSwitch({
+        category: "Player Stats",
+        configName: "statsParty",
+        title: "Party Join Stats",
+        description: "automatically /stats everyone that joins your party through party finder",
         subcategory: "Stats Command",
     })
     .addSwitch({
