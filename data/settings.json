@@ -436,6 +436,11 @@
                 "type": 6,
                 "name": "statsCommand",
                 "value": false
+            },
+            {
+                "type": 6,
+                "name": "statsParty",
+                "value": false
             }
         ]
     },
