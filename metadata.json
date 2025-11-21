@@ -4,5 +4,5 @@
     "version": "0.4",
     "description": "§bm§dr§fa§do§bw \n§0m§7r§fr§5p \n§cp§6u§er§2r§1r§5r \n§em§fe§5o§0w \n§dmr§ere§bow \n&dm&ra&du \n - by catboylei :3",
     "entry": "index.js",
-    "requires": ["Amaterasu", "PogData", "BloomCore"]
+    "requires": ["Amaterasu", "PogData", "BloomCore", "sbd"]
 }

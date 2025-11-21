@@ -3,6 +3,7 @@ import Settings from "./config"
 import "./utils/meowUtils.js"
 import "./utils/utils.js"
 import "./utils/packetUtils.js"
+import "./utils/sbdUtils.js"
 
 import "./features/meowing/furrySounds.js"
 import "./features/meowing/randomMeows.js"
@@ -26,6 +27,8 @@ import "./features/dungeons/deathTick.js"
 
 import "./features/slop/singleplayerSimu.js"
 import "./features/slop/customAliases.js"
+
+import "./features/playerStats/statsCommand.js"
 
 if (Settings().welcomeMessage) {
     ChatLib.chat(`

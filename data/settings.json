@@ -328,7 +328,7 @@
             {
                 "type": 6,
                 "name": "zeroPingDb",
-                "value": true
+                "value": false
             },
             {
                 "type": 8,
@@ -405,7 +405,7 @@
                     },
                     {
                         "name": "posTitles",
-                        "value": false
+                        "value": true
                     },
                     {
                         "name": "posSounds",
@@ -413,19 +413,29 @@
                     },
                     {
                         "name": "triggerOnce",
-                        "value": true
+                        "value": false
                     }
                 ]
             },
             {
                 "type": 6,
                 "name": "deathTick",
-                "value": true
+                "value": false
             },
             {
                 "type": 1,
                 "name": "deathTickScale",
                 "value": 1.5
+            }
+        ]
+    },
+    {
+        "category": "Player Stats",
+        "settings": [
+            {
+                "type": 6,
+                "name": "statsCommand",
+                "value": false
             }
         ]
     },

@@ -277,7 +277,7 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         category: "Inventory",
         configName: "inventoryButtons",
         title: "Inventory Buttons",
-        description: "toggles inventory buttons",
+        description: "toggles inventory buttons \nmiddle click on button to config what it sends through chat \nright click to enable/disable button",
         subcategory: "Inventory Buttons",
     })
     .addMultiCheckbox({
@@ -599,6 +599,13 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         subcategory: "Death Tick",
         options: [0.5, 3],
         value: 1.5
+    })
+    .addSwitch({
+        category: "Player Stats",
+        configName: "statsCommand",
+        title: "Stats Command",
+        description: "displays a quick overview of dungeon stats \nusage: /stats <player> <floor> \n(defaults to f7 if no floor given)",
+        subcategory: "Stats Command",
     })
     .addSwitch({
         category: "Slop",
