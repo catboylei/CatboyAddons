@@ -24,8 +24,8 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
     })    
     .addSwitch({
         category: "General",
-        configName: "welcomeMessage",
-        title: "Welcome Message",
+        configName: "disableWelcomeMessage",
+        title: "Disable Welcome Message",
         description: "toggle welcome message on/off",
     })
     .addButton({
@@ -314,129 +314,7 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         title: "disabled Button Color",
         description: "color of disabled buttons \nlow opacity highly recommended",
     })
-    .addSwitch({
-        category: "Inventory",
-        configName: "wardrobeHotkeys",
-        title: "Wardrobe Keybinds",
-        description: "toggles wardrobe keybinds",
-        subcategory: "Wardrobe Keybinds",
-    })
-    .addMultiCheckbox({
-        category: "Inventory",
-        subcategory: "Wardrobe Keybinds",
-        configName: "meowm",
-        title: "Wardrobe Keybinds Options",
-        description: "more wardrobe keybind options",
-        placeHolder: "meow",
-        options: [
-            {
-                title: "Allow unequipping",
-                configName: "unequipWardrobe",
-                value: false
-            },
-            {
-                title: "Zero Ping Wardrobe (visually buggy)",
-                configName: "pinglessWardrobe",
-                value: false
-            }
-        ]
-    })
-    .addSwitch({
-        category: "Notifiers",
-        configName: "toggleBloodRush",
-        subcategory: "Blood Rush",
-        title: "Toggle Blood Rush Titles",
-        description: "toggle blood rush titles (meow)"
-    })
-    .addMultiCheckbox({
-        category: "Notifiers",
-        subcategory: "Blood Rush",
-        configName: "meowmeowmeow",
-        title: "Blood Rush Title Options",
-        description: "toggleable bloodrush titles",
-        placeHolder: "meow",
-        options: [
-            {
-                title: "On Key Spawn",
-                configName: "witherKeySpawn",
-                value: false
-            },
-            {
-                title: "On Key Pickup",
-                configName: "witherKeyPickup",
-                value: false,
-            },
-            {
-                title: "On Door Open",
-                configName: "witherDoorOpen",
-                value: false
-            },
-            {
-                title: "On Blood start",
-                configName: "bloodOpen",
-                value: false
-            }
-        ]
-    })
-    .addSwitch({
-        category: "Notifiers",
-        configName: "toggleBossfightTitles",
-        title: "Toggle Boss Titles",
-        description: "toggle boss titles",
-        subcategory: "Boss"
-    })
-    .addMultiCheckbox({
-        category: "Notifiers",
-        subcategory: "Blood Rush",
-        configName: "meowmeowmeow",
-        title: "Boss Title Options",
-        description: "Boss Title options",
-        placeHolder: "meow",
-        options: [
-            {
-                title: "P5 Rag Axe",
-                configName: "ragAxeTitle",
-                value: false
-            },
-            {
-                title: "Wish",
-                configName: "wishTitle",
-                value: false
-            }
-        ]
-    })
-    .addSwitch({
-        category: "Notifiers",
-        configName: "toggleClearTitles",
-        title: "Toggle Clear Titles",
-        description: "toggle clear titles",
-        subcategory: "Clear"
-    })
-    .addMultiCheckbox({
-        category: "Notifiers",
-        subcategory: "Clear",
-        configName: "meowmeowmmeoeow",
-        title: "Clear Title Options",
-        description: "Clear Title options",
-        placeHolder: "meow",
-        options: [
-            {
-                title: "270 score",
-                configName: "Stitle",
-                value: false
-            },
-            {
-                title: "300 score",
-                configName: "SPlustitle",
-                value: false
-            },
-            {
-                title: "mimic killed",
-                configName: "mimicTitle",
-                value: false
-            }
-        ]
-    })
+    
     .addSwitch({
         category: "Notifiers",
         configName: "notifyLag",
@@ -584,22 +462,6 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
             },
         ]
     })
-    .addSwitch({
-        category: "Dungeons",
-        configName: "deathTick",
-        title: "Death Tick Display",
-        description: "Displays Death Tick",
-        subcategory: "Death Tick",
-    })
-    .addSlider({
-        category: "Dungeons",
-        configName: "deathTickScale",
-        title: "Display Scale",
-        description: "scale of the death tick display",
-        subcategory: "Death Tick",
-        options: [0.5, 3],
-        value: 1.5
-    })
     .addTextParagraph({
         category: "Player Stats",
         configName: "hi",
@@ -658,6 +520,121 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
             }
         ]
     })
+
+
+if (data.bloat) {
+    config.addSwitch({
+        category: "Notifiers",
+        configName: "toggleBloodRush",
+        subcategory: "Blood Rush",
+        title: "Toggle Blood Rush Titles",
+        description: "toggle blood rush titles (meow)"
+    })
+    .addMultiCheckbox({
+        category: "Notifiers",
+        subcategory: "Blood Rush",
+        configName: "meowmeowmeow",
+        title: "Blood Rush Title Options",
+        description: "toggleable bloodrush titles",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "On Key Spawn",
+                configName: "witherKeySpawn",
+                value: false
+            },
+            {
+                title: "On Key Pickup",
+                configName: "witherKeyPickup",
+                value: false,
+            },
+            {
+                title: "On Door Open",
+                configName: "witherDoorOpen",
+                value: false
+            },
+            {
+                title: "On Blood start",
+                configName: "bloodOpen",
+                value: false
+            }
+        ]
+    })
+    .addSwitch({
+        category: "Notifiers",
+        configName: "toggleBossfightTitles",
+        title: "Toggle Boss Titles",
+        description: "toggle boss titles",
+        subcategory: "Boss"
+    })
+    .addMultiCheckbox({
+        category: "Notifiers",
+        subcategory: "Blood Rush",
+        configName: "meowmeowmeow",
+        title: "Boss Title Options",
+        description: "Boss Title options",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "P5 Rag Axe",
+                configName: "ragAxeTitle",
+                value: false
+            },
+            {
+                title: "Wish",
+                configName: "wishTitle",
+                value: false
+            }
+        ]
+    })
+    .addSwitch({
+        category: "Notifiers",
+        configName: "toggleClearTitles",
+        title: "Toggle Clear Titles",
+        description: "toggle clear titles",
+        subcategory: "Clear"
+    })
+    .addMultiCheckbox({
+        category: "Notifiers",
+        subcategory: "Clear",
+        configName: "meowmeowmmeoeow",
+        title: "Clear Title Options",
+        description: "Clear Title options",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "270 score",
+                configName: "Stitle",
+                value: false
+            },
+            {
+                title: "300 score",
+                configName: "SPlustitle",
+                value: false
+            },
+            {
+                title: "mimic killed",
+                configName: "mimicTitle",
+                value: false
+            }
+        ]
+    })
+    .addSwitch({
+        category: "Dungeons",
+        configName: "deathTick",
+        title: "Death Tick Display",
+        description: "Displays Death Tick",
+        subcategory: "Death Tick",
+    })
+    .addSlider({
+        category: "Dungeons",
+        configName: "deathTickScale",
+        title: "Display Scale",
+        description: "scale of the death tick display",
+        subcategory: "Death Tick",
+        options: [0.5, 3],
+        value: 1.5
+    })    
     .addSwitch({
         category: "Slop",
         configName: "customAliases",
@@ -665,6 +642,41 @@ const config = new DefaultConfig("CatboyAddons", "data/settings.json")
         description: "lets you set custom command aliases \n/aliashelp",
         subcategory: "Aliases",
     })
+    .addSwitch({
+        category: "Inventory",
+        configName: "wardrobeHotkeys",
+        title: "Wardrobe Keybinds",
+        description: "toggles wardrobe keybinds",
+        subcategory: "Wardrobe Keybinds",
+    })
+    .addMultiCheckbox({
+        category: "Inventory",
+        subcategory: "Wardrobe Keybinds",
+        configName: "meowm",
+        title: "Wardrobe Keybinds Options",
+        description: "more wardrobe keybind options",
+        placeHolder: "meow",
+        options: [
+            {
+                title: "Allow unequipping",
+                configName: "unequipWardrobe",
+                value: false
+            },
+            {
+                title: "Zero Ping Wardrobe (visually buggy)",
+                configName: "pinglessWardrobe",
+                value: false
+            }
+        ]
+    })
+}
+
+register('Command', (value) => {
+    if (value !== 'true' && value !== 'false') return ChatLib.chat(`&cUsage: /bloat <true/false> \n&cCurrent value : ${data.bloat}`)
+    data.bloat = (value === 'true') ? true : false
+    data.save()
+    ChatLib.chat(`${prefix} &dSet bloat to ${data.bloat ? '&aENABLED' : '&4DISABLED'}. \n&dPlease run &f/ct reload &dto apply changes.`)
+}).setName('bloat')
 
 const setting = new Settings("CatboyAddons", config, "data/scheme-meow.json")
     .setCommand("CatboyAddons", ["cba", "catboyaddons"])

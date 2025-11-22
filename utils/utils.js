@@ -2,6 +2,7 @@ import PogObject from "../../PogData"
 
 // creates a data folder
 export const data = new PogObject("CatboyAddons/data", {
+    bloat: false,
     slotBindings: {},
     slotBindingsHistory: {},
     inventoryButtons: {},

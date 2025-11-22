@@ -30,7 +30,7 @@ import "./features/slop/customAliases.js"
 
 import "./features/playerStats/statsView.js"
 
-if (Settings().welcomeMessage) {
+if (!Settings().disableWelcomeMessage) {
     ChatLib.chat(`
 &5-------------------------------------------
         &dWelcome to §5[C§dat§fbo§byA§fdd§don§5s] &d/ᐠ˵- ⩊ -˵マ
@@ -39,8 +39,12 @@ if (Settings().welcomeMessage) {
           &dgui with &r/catboyaddons &dor &r/cba
                         ₍^. .^₎⟆
 
-            &dDisable this message by disabling 
-                    'Welcome Message'
+            &dTo hide \& disable bloat features
+              &dthat are already in other mods, 
+                 &drun /bloat &f<true/false>
+
+            &dDisable this message by checking 
+                'Disable Welcome Message'
 
                       &dBy lei with <3
                 &dKeep Meowing ≽ ^⎚ ˕ ⎚^ ≼
