@@ -643,6 +643,13 @@ if (data.bloat) {
         subcategory: "Aliases",
     })
     .addSwitch({
+        category: "Slop",
+        configName: "autoPchat",
+        title: "Auto Party Chat",
+        description: "automatically runs /chat p when you join a party",
+        subcategory: "Party Chat",
+    })
+    .addSwitch({
         category: "Inventory",
         configName: "wardrobeHotkeys",
         title: "Wardrobe Keybinds",
