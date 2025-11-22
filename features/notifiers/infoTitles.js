@@ -77,6 +77,19 @@ register("chat", () => {
     World.playSound("note.pling", 10, 0.75)
 }).setCriteria("[BOSS] The Watcher: Things feel a little more roomy now, eh?")
 
+register("chat", () => {
+    if (!Settings().bloodDone || !Settings().toggle || !Settings().toggleClearTitles) return
+    Client.showTitle(`&dBlood Done!`, "", 0, 30, 0)
+    World.playSound("note.pling", 10, 0.75)
+}).setCriteria("[BOSS] The Watcher: You have proven yourself. You may pass.")
+
+register("soundPlay", (_, name, vol) => {
+    if (!Settings().batDeath || !Settings().toggle || !Settings().toggleClearTitles) return
+    if ((name == "mob.bat.hurt" && vol == 0.10000000149011612) || name == "mob.bat.death") {
+        Client.showTitle("&dBat Killed!", "", 0, 30, 0)
+    }
+})
+
 let announced270 = false
 let announced300 = false
 let announcedMimic = false

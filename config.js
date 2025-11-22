@@ -616,7 +616,17 @@ if (data.bloat) {
                 title: "mimic killed",
                 configName: "mimicTitle",
                 value: false
-            }
+            },
+            {
+                title: "blood done",
+                configName: "bloodDone",
+                value: false
+            },
+            {
+                title: "bat death",
+                configName: "batDeath",
+                value: false
+            },
         ]
     })
     .addSwitch({
