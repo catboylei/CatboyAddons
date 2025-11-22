@@ -620,6 +620,13 @@ if (data.bloat) {
         ]
     })
     .addSwitch({
+        category: "Notifiers",
+        configName: "tacTimer",
+        title: "Tac Timer",
+        description: "displays a timer when you use tac",
+        subcategory: "Other",
+    })
+    .addSwitch({
         category: "Dungeons",
         configName: "deathTick",
         title: "Death Tick Display",
